@@ -1,9 +1,9 @@
 # Extending image
 FROM node:alpine
 
-RUN apt-get update
-RUN apt-get upgrade -y
-RUN apt-get -y install autoconf automake libtool nasm make pkg-config git apt-utils
+#RUN apk add upgrade -y
+#RUN apk add -y install autoconf automake libtool nasm make pkg-config git apt-utils
+RUN apk add git
 
 # Create app directory
 RUN mkdir -p /usr/src/app
