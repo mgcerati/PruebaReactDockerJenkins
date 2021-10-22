@@ -21,8 +21,14 @@ RUN npm install
 # Bundle app source
 COPY . /usr/src/app
 
+# Port to listener
+EXPOSE 7000
+
 # Environment variables
 ENV NODE_ENV test
+ENV PORT 7000
+ENV PUBLIC_PATH "/"
 
 # Main command
-CMD [ "npm", "test" ]
+#CMD [ "npm", "test" ]
+CMD [ "npm", "run", "start:server" ]
