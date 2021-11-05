@@ -1,5 +1,5 @@
 # Extending image
-FROM node:alpine
+FROM node:alpine:16
 
 #RUN apk add upgrade -y
 #RUN apk add -y install autoconf automake libtool nasm make pkg-config git apt-utils
