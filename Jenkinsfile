@@ -26,7 +26,7 @@ node {
         sh 'docker rmi -f react-app localhost:5000/react-app'
         sh 'docker pull localhost:5000/react-app'
         sh 'docker rm -f react'
-        sh 'docker run-d -p 3000:3000 --name react localhost:5000/react-app:latest'
+        sh 'docker run -d -p 3000:3000 --name react localhost:5000/react-app:latest'
       }
     }
   }
